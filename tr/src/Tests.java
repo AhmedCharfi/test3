@@ -24,7 +24,7 @@ public class Tests {
 		}
 		if(tr.getOp().equals("?"))
 		{
-		assertEquals(tr.getRes(),0);
+		assertEquals(tr.getRes(),4);
 		}
 	}
 	@Test
@@ -36,7 +36,7 @@ public class Tests {
 		}
 		if(tr.getOp().equals("/"))
 		{
-		assertEquals(tr.getRes(),2);
+		assertEquals(tr.getRes(),0);
 		}
 	}
 	
