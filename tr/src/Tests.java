@@ -27,4 +27,17 @@ public class Tests {
 		assertEquals(tr.getRes(),0);
 		}
 	}
+	@Test
+	public void test3()
+	{
+		if(tr.getOp().equals("*"))
+		{
+		assertEquals(tr.getRes(),10);
+		}
+		if(tr.getOp().equals("/"))
+		{
+		assertEquals(tr.getRes(),2);
+		}
+	}
+	
 }
