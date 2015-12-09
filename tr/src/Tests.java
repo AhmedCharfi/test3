@@ -18,26 +18,11 @@ public class Tests {
 	@Test
 	public void test2()
 	{
-		if(tr.getOp().equals("-"))
-		{
-		assertEquals(tr.getRes(),-1);
-		}
-		if(tr.getOp().equals("?"))
-		{
-		assertEquals(tr.getRes(),4);
-		}
-	}
-	@Test
-	public void test3()
-	{
-		if(tr.getOp().equals("*"))
-		{
-		assertEquals(tr.getRes(),10);
-		}
-		if(tr.getOp().equals("/"))
-		{
-		assertEquals(tr.getRes(),0);
-		}
+			
+		assertEquals(tr.div(a,b),0);
+		assertEquals(tr.sub(a,b),11);
+		
+		
 	}
 	
 }

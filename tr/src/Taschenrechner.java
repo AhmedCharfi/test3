@@ -10,7 +10,7 @@ public class Taschenrechner {
 	public void setOp(String op) {
 		this.op = op;
 	}
-	int res = 0;
+	static int res = 0;
 	public int getRes() {
 		return res;
 	}
@@ -51,19 +51,23 @@ public class Taschenrechner {
 		tr.setOp( scan.next());
 		if(tr.getOp().equals("+"))
 		{
-			tr.setRes( tr.add(a,b));
+			//tr.setRes( tr.add(a,b));
+			res = tr.add(a, b);
 		}
 		else if(tr.getOp().equals("-"))
 		{
-			tr.setRes(tr.sub(a, b));
+			//tr.setRes(tr.sub(a, b));
+			res = tr.sub(a, b);
 		}
 		else if(tr.getOp().equals("*"))
 		{
-			tr.setRes(tr.mul(a, b));
+			//tr.setRes(tr.mul(a, b));
+			res = tr.mul(a, b);
 		}
 		else if(tr.getOp().equals("/"))
 		{
-			tr.setRes(tr.div(a, b));
+			res = tr.div(a, b);
+		//	tr.setRes(tr.div(a, b));
 		}
 		else
 		{
@@ -82,4 +86,5 @@ public class Taschenrechner {
 
 	}
 	}
+	
 }
